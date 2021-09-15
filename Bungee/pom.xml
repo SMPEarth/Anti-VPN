@@ -351,8 +351,8 @@
             <version>${bstats.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.djrapitops</groupId>
-            <artifactId>Plan-api</artifactId>
+            <groupId>com.github.plan-player-analytics</groupId>
+            <artifactId>Plan</artifactId>
             <version>${plan.version}</version>
             <scope>provided</scope>
         </dependency>
