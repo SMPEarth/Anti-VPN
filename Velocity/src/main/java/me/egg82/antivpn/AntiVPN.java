@@ -51,7 +51,7 @@ import me.egg82.antivpn.storage.StorageService;
 import me.egg82.antivpn.utils.ExceptionUtil;
 import me.egg82.antivpn.utils.ValidationUtil;
 import net.engio.mbassy.bus.MBassador;
-import net.kyori.text.format.TextColor;
+import net.kyori.adventure.text.format.NamedTextColor;
 import ninja.egg82.events.PriorityEventSubscriber;
 import ninja.egg82.service.ServiceLocator;
 import org.checkerframework.checker.nullness.qual.NonNull;
@@ -178,8 +178,8 @@ public class AntiVPN {
     }
 
     private void setChatColors() {
-        commandManager.setFormat(MessageType.ERROR, TextColor.DARK_RED, TextColor.YELLOW, TextColor.AQUA, TextColor.WHITE);
-        commandManager.setFormat(MessageType.INFO, TextColor.WHITE, TextColor.YELLOW, TextColor.AQUA, TextColor.GREEN, TextColor.RED, TextColor.GOLD, TextColor.BLUE, TextColor.GRAY, TextColor.DARK_RED);
+        commandManager.setFormat(MessageType.ERROR, NamedTextColor.DARK_RED, NamedTextColor.YELLOW, NamedTextColor.AQUA, NamedTextColor.WHITE);
+        commandManager.setFormat(MessageType.INFO, NamedTextColor.WHITE, NamedTextColor.YELLOW, NamedTextColor.AQUA, NamedTextColor.GREEN, NamedTextColor.RED, NamedTextColor.GOLD, NamedTextColor.BLUE, NamedTextColor.GRAY, NamedTextColor.DARK_RED);
     }
 
     private void loadServices() {
